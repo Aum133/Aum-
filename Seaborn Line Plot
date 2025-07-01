@@ -1,0 +1,10 @@
+import seaborn as sns
+import numpy as np
+import pandas as pd
+
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+df = pd.DataFrame({'x': x, 'y': y})
+sns.lineplot(x='x', y='y', data=df)
+plt.title('Line Plot: Sine Wave')
+plt.show()
