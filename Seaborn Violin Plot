@@ -1,0 +1,10 @@
+import seaborn as sns
+import pandas as pd
+
+df = pd.DataFrame({
+    'category': np.random.choice(['A', 'B', 'C'], 100),
+    'value': np.random.randn(100)
+})
+sns.violinplot(x='category', y='value', data=df)
+plt.title('Violin Plot: Distribution by Category')
+plt.show()
